@@ -1,6 +1,6 @@
-class App
+class Game
 
   def hi
-    puts "Hello, app."
+    puts "Hello, Game."
   end
 end
