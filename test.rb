@@ -3,8 +3,7 @@ require 'turn'
 require_relative './app.rb'
 class GameTest < MiniTest::Unit::TestCase
 
-  def test_hi
-    Game.new.hi
-    assert true
+  def test_gutter_game
+    Game.new
   end
 end
