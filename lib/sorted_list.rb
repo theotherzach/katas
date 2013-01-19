@@ -2,7 +2,6 @@ require_relative 'fake_enumerable.rb'
 
 class SortedList
   include FakeEnumerable
-
   def initialize
     @data = []
   end
