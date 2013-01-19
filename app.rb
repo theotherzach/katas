@@ -1,1 +1,1 @@
-require_relative 'sorted_list'
+require_relative 'lib/sorted_list.rb'
