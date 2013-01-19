@@ -9,6 +9,10 @@ describe "FakeEnumerable" do
   end
 
   it "supports map" do
-    @list.map { |x| x + 1 }.must_equal [3, 4, 7, 13, 42]
+    @list.map { |x| x + 1 }.must_equal [4, 5, 8, 14, 43]
+  end
+
+  it "supports select" do
+    @list.select { |x| x.even? }.must_equal [4, 42]
   end
 end
