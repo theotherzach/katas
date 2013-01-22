@@ -1,8 +1,10 @@
 require "minitest/autorun"
+require "turn"
 
 describe "Array" do
   before do
-    @list = Array.new
+    @array = []
+    @array << 3 << 13 << 42 << 4 << 7
   end
 
   
