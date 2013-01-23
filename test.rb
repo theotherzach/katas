@@ -1,405 +1,445 @@
 require "minitest/autorun"
 
-describe "FakeArray" do
+describe "Array" do
   before do
     @list = Array.new
   end
 
   
-  it "supports []" do
-    # implement test for []  
+  it "supports to_a" do
+    # implement test for to_a  
   end
   
-  it "supports try_convert" do
-    # implement test for try_convert  
+  it "supports to_ary" do
+    # implement test for to_ary  
   end
   
-  it "supports allocate" do
-    # implement test for allocate  
+  it "supports []=" do
+    # implement test for []=  
   end
   
-  it "supports new" do
-    # implement test for new  
+  it "supports at" do
+    # implement test for at  
   end
   
-  it "supports superclass" do
-    # implement test for superclass  
+  it "supports fetch" do
+    # implement test for fetch  
   end
   
-  it "supports freeze" do
-    # implement test for freeze  
+  it "supports first" do
+    # implement test for first  
   end
   
-  it "supports ===" do
-    # implement test for ===  
+  it "supports last" do
+    # implement test for last  
   end
   
-  it "supports ==" do
-    # implement test for ==  
+  it "supports concat" do
+    # implement test for concat  
   end
   
-  it "supports <=>" do
-    # implement test for <=>  
+  it "supports <<" do
+    # implement test for <<  
   end
   
-  it "supports <" do
-    # implement test for <  
+  it "supports push" do
+    # implement test for push  
   end
   
-  it "supports <=" do
-    # implement test for <=  
+  it "supports pop" do
+    # implement test for pop  
   end
   
-  it "supports >" do
-    # implement test for >  
+  it "supports shift" do
+    # implement test for shift  
   end
   
-  it "supports >=" do
-    # implement test for >=  
+  it "supports unshift" do
+    # implement test for unshift  
   end
   
-  it "supports to_s" do
-    # implement test for to_s  
+  it "supports insert" do
+    # implement test for insert  
   end
   
-  it "supports included_modules" do
-    # implement test for included_modules  
+  it "supports each" do
+    # implement test for each  
   end
   
-  it "supports include?" do
-    # implement test for include?  
+  it "supports each_index" do
+    # implement test for each_index  
   end
   
-  it "supports name" do
-    # implement test for name  
+  it "supports reverse_each" do
+    # implement test for reverse_each  
   end
   
-  it "supports ancestors" do
-    # implement test for ancestors  
+  it "supports length" do
+    # implement test for length  
   end
   
-  it "supports instance_methods" do
-    # implement test for instance_methods  
+  it "supports size" do
+    # implement test for size  
   end
   
-  it "supports public_instance_methods" do
-    # implement test for public_instance_methods  
+  it "supports empty?" do
+    # implement test for empty?  
   end
   
-  it "supports protected_instance_methods" do
-    # implement test for protected_instance_methods  
+  it "supports find_index" do
+    # implement test for find_index  
   end
   
-  it "supports private_instance_methods" do
-    # implement test for private_instance_methods  
+  it "supports index" do
+    # implement test for index  
   end
   
-  it "supports constants" do
-    # implement test for constants  
+  it "supports rindex" do
+    # implement test for rindex  
   end
   
-  it "supports const_get" do
-    # implement test for const_get  
+  it "supports join" do
+    # implement test for join  
   end
   
-  it "supports const_set" do
-    # implement test for const_set  
+  it "supports reverse" do
+    # implement test for reverse  
   end
   
-  it "supports const_defined?" do
-    # implement test for const_defined?  
+  it "supports reverse!" do
+    # implement test for reverse!  
   end
   
-  it "supports const_missing" do
-    # implement test for const_missing  
+  it "supports rotate" do
+    # implement test for rotate  
   end
   
-  it "supports class_variables" do
-    # implement test for class_variables  
+  it "supports rotate!" do
+    # implement test for rotate!  
   end
   
-  it "supports remove_class_variable" do
-    # implement test for remove_class_variable  
+  it "supports sort" do
+    # implement test for sort  
   end
   
-  it "supports class_variable_get" do
-    # implement test for class_variable_get  
+  it "supports sort!" do
+    # implement test for sort!  
   end
   
-  it "supports class_variable_set" do
-    # implement test for class_variable_set  
+  it "supports sort_by!" do
+    # implement test for sort_by!  
   end
   
-  it "supports class_variable_defined?" do
-    # implement test for class_variable_defined?  
+  it "supports collect" do
+    # implement test for collect  
   end
   
-  it "supports public_constant" do
-    # implement test for public_constant  
+  it "supports collect!" do
+    # implement test for collect!  
   end
   
-  it "supports private_constant" do
-    # implement test for private_constant  
+  it "supports map" do
+    # implement test for map  
   end
   
-  it "supports module_exec" do
-    # implement test for module_exec  
+  it "supports map!" do
+    # implement test for map!  
   end
   
-  it "supports class_exec" do
-    # implement test for class_exec  
+  it "supports select" do
+    # implement test for select  
   end
   
-  it "supports module_eval" do
-    # implement test for module_eval  
+  it "supports select!" do
+    # implement test for select!  
   end
   
-  it "supports class_eval" do
-    # implement test for class_eval  
+  it "supports keep_if" do
+    # implement test for keep_if  
   end
   
-  it "supports method_defined?" do
-    # implement test for method_defined?  
+  it "supports values_at" do
+    # implement test for values_at  
   end
   
-  it "supports public_method_defined?" do
-    # implement test for public_method_defined?  
+  it "supports delete" do
+    # implement test for delete  
   end
   
-  it "supports private_method_defined?" do
-    # implement test for private_method_defined?  
+  it "supports delete_at" do
+    # implement test for delete_at  
   end
   
-  it "supports protected_method_defined?" do
-    # implement test for protected_method_defined?  
+  it "supports delete_if" do
+    # implement test for delete_if  
   end
   
-  it "supports public_class_method" do
-    # implement test for public_class_method  
+  it "supports reject" do
+    # implement test for reject  
   end
   
-  it "supports private_class_method" do
-    # implement test for private_class_method  
+  it "supports reject!" do
+    # implement test for reject!  
   end
   
-  it "supports autoload" do
-    # implement test for autoload  
+  it "supports zip" do
+    # implement test for zip  
   end
   
-  it "supports autoload?" do
-    # implement test for autoload?  
+  it "supports transpose" do
+    # implement test for transpose  
   end
   
-  it "supports instance_method" do
-    # implement test for instance_method  
+  it "supports replace" do
+    # implement test for replace  
   end
   
-  it "supports public_instance_method" do
-    # implement test for public_instance_method  
+  it "supports clear" do
+    # implement test for clear  
   end
   
-  it "supports nil?" do
-    # implement test for nil?  
+  it "supports fill" do
+    # implement test for fill  
   end
   
-  it "supports =~" do
-    # implement test for =~  
+  it "supports slice" do
+    # implement test for slice  
   end
   
-  it "supports !~" do
-    # implement test for !~  
+  it "supports slice!" do
+    # implement test for slice!  
   end
   
-  it "supports eql?" do
-    # implement test for eql?  
+  it "supports assoc" do
+    # implement test for assoc  
   end
   
-  it "supports hash" do
-    # implement test for hash  
+  it "supports rassoc" do
+    # implement test for rassoc  
   end
   
-  it "supports class" do
-    # implement test for class  
+  it "supports +" do
+    # implement test for +  
   end
   
-  it "supports singleton_class" do
-    # implement test for singleton_class  
+  it "supports *" do
+    # implement test for *  
   end
   
-  it "supports clone" do
-    # implement test for clone  
+  it "supports -" do
+    # implement test for -  
   end
   
-  it "supports dup" do
-    # implement test for dup  
+  it "supports &" do
+    # implement test for &  
   end
   
-  it "supports initialize_dup" do
-    # implement test for initialize_dup  
+  it "supports |" do
+    # implement test for |  
   end
   
-  it "supports initialize_clone" do
-    # implement test for initialize_clone  
+  it "supports uniq" do
+    # implement test for uniq  
   end
   
-  it "supports taint" do
-    # implement test for taint  
+  it "supports uniq!" do
+    # implement test for uniq!  
   end
   
-  it "supports tainted?" do
-    # implement test for tainted?  
+  it "supports compact" do
+    # implement test for compact  
   end
   
-  it "supports untaint" do
-    # implement test for untaint  
+  it "supports compact!" do
+    # implement test for compact!  
   end
   
-  it "supports untrust" do
-    # implement test for untrust  
+  it "supports flatten" do
+    # implement test for flatten  
   end
   
-  it "supports untrusted?" do
-    # implement test for untrusted?  
+  it "supports flatten!" do
+    # implement test for flatten!  
   end
   
-  it "supports trust" do
-    # implement test for trust  
+  it "supports count" do
+    # implement test for count  
   end
   
-  it "supports frozen?" do
-    # implement test for frozen?  
+  it "supports shuffle!" do
+    # implement test for shuffle!  
   end
   
-  it "supports inspect" do
-    # implement test for inspect  
+  it "supports shuffle" do
+    # implement test for shuffle  
   end
   
-  it "supports methods" do
-    # implement test for methods  
+  it "supports sample" do
+    # implement test for sample  
   end
   
-  it "supports singleton_methods" do
-    # implement test for singleton_methods  
+  it "supports cycle" do
+    # implement test for cycle  
   end
   
-  it "supports protected_methods" do
-    # implement test for protected_methods  
+  it "supports permutation" do
+    # implement test for permutation  
   end
   
-  it "supports private_methods" do
-    # implement test for private_methods  
+  it "supports combination" do
+    # implement test for combination  
   end
   
-  it "supports public_methods" do
-    # implement test for public_methods  
+  it "supports repeated_permutation" do
+    # implement test for repeated_permutation  
   end
   
-  it "supports instance_variables" do
-    # implement test for instance_variables  
+  it "supports repeated_combination" do
+    # implement test for repeated_combination  
   end
   
-  it "supports instance_variable_get" do
-    # implement test for instance_variable_get  
+  it "supports product" do
+    # implement test for product  
   end
   
-  it "supports instance_variable_set" do
-    # implement test for instance_variable_set  
+  it "supports take" do
+    # implement test for take  
   end
   
-  it "supports instance_variable_defined?" do
-    # implement test for instance_variable_defined?  
+  it "supports take_while" do
+    # implement test for take_while  
   end
   
-  it "supports instance_of?" do
-    # implement test for instance_of?  
+  it "supports drop" do
+    # implement test for drop  
   end
   
-  it "supports kind_of?" do
-    # implement test for kind_of?  
+  it "supports drop_while" do
+    # implement test for drop_while  
   end
   
-  it "supports is_a?" do
-    # implement test for is_a?  
+  it "supports pack" do
+    # implement test for pack  
   end
   
-  it "supports tap" do
-    # implement test for tap  
+  it "supports entries" do
+    # implement test for entries  
   end
   
-  it "supports send" do
-    # implement test for send  
+  it "supports sort_by" do
+    # implement test for sort_by  
   end
   
-  it "supports public_send" do
-    # implement test for public_send  
+  it "supports grep" do
+    # implement test for grep  
   end
   
-  it "supports respond_to?" do
-    # implement test for respond_to?  
+  it "supports find" do
+    # implement test for find  
   end
   
-  it "supports respond_to_missing?" do
-    # implement test for respond_to_missing?  
+  it "supports detect" do
+    # implement test for detect  
   end
   
-  it "supports extend" do
-    # implement test for extend  
+  it "supports find_all" do
+    # implement test for find_all  
   end
   
-  it "supports display" do
-    # implement test for display  
+  it "supports flat_map" do
+    # implement test for flat_map  
   end
   
-  it "supports method" do
-    # implement test for method  
+  it "supports collect_concat" do
+    # implement test for collect_concat  
   end
   
-  it "supports public_method" do
-    # implement test for public_method  
+  it "supports inject" do
+    # implement test for inject  
   end
   
-  it "supports define_singleton_method" do
-    # implement test for define_singleton_method  
+  it "supports reduce" do
+    # implement test for reduce  
   end
   
-  it "supports object_id" do
-    # implement test for object_id  
+  it "supports partition" do
+    # implement test for partition  
   end
   
-  it "supports to_enum" do
-    # implement test for to_enum  
+  it "supports group_by" do
+    # implement test for group_by  
   end
   
-  it "supports enum_for" do
-    # implement test for enum_for  
+  it "supports all?" do
+    # implement test for all?  
   end
   
-  it "supports equal?" do
-    # implement test for equal?  
+  it "supports any?" do
+    # implement test for any?  
   end
   
-  it "supports !" do
-    # implement test for !  
+  it "supports one?" do
+    # implement test for one?  
   end
   
-  it "supports !=" do
-    # implement test for !=  
+  it "supports none?" do
+    # implement test for none?  
   end
   
-  it "supports instance_eval" do
-    # implement test for instance_eval  
+  it "supports min" do
+    # implement test for min  
   end
   
-  it "supports instance_exec" do
-    # implement test for instance_exec  
+  it "supports max" do
+    # implement test for max  
   end
   
-  it "supports __send__" do
-    # implement test for __send__  
+  it "supports minmax" do
+    # implement test for minmax  
   end
   
-  it "supports __id__" do
-    # implement test for __id__  
+  it "supports min_by" do
+    # implement test for min_by  
+  end
+  
+  it "supports max_by" do
+    # implement test for max_by  
+  end
+  
+  it "supports minmax_by" do
+    # implement test for minmax_by  
+  end
+  
+  it "supports member?" do
+    # implement test for member?  
+  end
+  
+  it "supports each_with_index" do
+    # implement test for each_with_index  
+  end
+  
+  it "supports each_entry" do
+    # implement test for each_entry  
+  end
+  
+  it "supports each_slice" do
+    # implement test for each_slice  
+  end
+  
+  it "supports each_cons" do
+    # implement test for each_cons  
+  end
+  
+  it "supports each_with_object" do
+    # implement test for each_with_object  
+  end
+  
+  it "supports chunk" do
+    # implement test for chunk  
+  end
+  
+  it "supports slice_before" do
+    # implement test for slice_before  
   end
   
 end
