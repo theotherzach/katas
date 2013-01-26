@@ -3,113 +3,132 @@ require "turn"
 
 describe "Array" do
   before do
-    @array = []
-    @array << 3 << 13 << 42 << 4 << 7
+    @array = [3, 13, 42, 4, 7]
+    @a = [1, 2]
   end
 
   
   it "supports to_a" do
-    # implement test for to_a  
+    @array.to_a.must_equal @array
   end
   
   it "supports to_ary" do
-    # implement test for to_ary  
+    @array.to_a.must_equal @array
   end
   
   it "supports []=" do
-    # implement test for []=  
+    @array[0].must_equal 3
   end
   
   it "supports at" do
-    # implement test for at  
+    @array.at(0).must_equal 3
   end
   
   it "supports fetch" do
-    # implement test for fetch  
+    @array.fetch(0).must_equal 3
   end
   
   it "supports first" do
-    # implement test for first  
+    @array.first.must_equal 3
   end
   
   it "supports last" do
-    # implement test for last  
+    @array.last.must_equal 7
   end
   
   it "supports concat" do
-    # implement test for concat  
+    [1, 2].concat([3, 4]).must_equal [1, 2, 3, 4]
   end
   
   it "supports <<" do
-    # implement test for <<  
+    @a << 3 << 4 
+    @a.must_equal [1, 2, 3, 4]
   end
   
   it "supports push" do
-    # implement test for push  
+    @a.push(3).must_equal [1, 2, 3]
   end
   
   it "supports pop" do
-    # implement test for pop  
+    top = @a.pop
+    top.must_equal 2
+    @a.must_equal [1]
   end
   
   it "supports shift" do
-    # implement test for shift  
+    @array.shift(2).must_equal [3, 13]
   end
   
   it "supports unshift" do
-    # implement test for unshift  
+    @a.unshift(0).must_equal [0, 1, 2]
   end
   
   it "supports insert" do
-    # implement test for insert  
+    @a.insert(1, 1.5).must_equal [1, 1.5, 2]
   end
   
   it "supports each" do
-    # implement test for each  
+    total = 0
+    @array.each do |e|
+       total += e
+    end
+    total.must_equal @array.inject { |sum, e| sum + e }
   end
   
   it "supports each_index" do
-    # implement test for each_index  
+    a = []
+    @array.each_index do |i, e|
+      a << i
+    end
+    a.must_equal [0, 1, 2, 3, 4]
   end
   
   it "supports reverse_each" do
-    # implement test for reverse_each  
+    a = []
+    @a.reverse_each do |e|
+      a << e
+    end
+    a.must_equal [2, 1]
   end
   
   it "supports length" do
-    # implement test for length  
+    @array.length.must_equal 5
   end
   
   it "supports size" do
-    # implement test for size  
+    @array.size.must_equal 5
   end
   
   it "supports empty?" do
-    # implement test for empty?  
+    a = []
+    a.empty?.must_equal true
   end
   
   it "supports find_index" do
-    # implement test for find_index  
+    @array.find_index(3).must_equal 0
   end
   
   it "supports index" do
-    # implement test for index  
+    @array.index { |x| x==42 }.must_equal 2
   end
   
   it "supports rindex" do
-    # implement test for rindex  
+    @array.rindex(3).must_equal 0
   end
   
   it "supports join" do
-    # implement test for join  
+    @a.join("BLAM").must_equal "1BLAM2"
   end
   
   it "supports reverse" do
-    # implement test for reverse  
+    reversed = @a.reverse
+    @a.must_equal [1, 2]
+    reversed.must_equal [2, 1]
   end
   
   it "supports reverse!" do
-    # implement test for reverse!  
+    @a.reverse!
+    @a.must_equal [2, 1]
   end
   
   it "supports rotate" do
